@@ -39,7 +39,7 @@ jobs:
       - name: Install Dependencies
         run:  pip install -r tourism_project_Anubha/requirements.txt
       - name: Run Data Preparation
-        run: tourism_project_Anubha/model_building/prep.py
+        run: chmod +x tourism_project_Anubha/model_building/prep.py
       - name: Upload Train Test Splits
         uses: actions/upload-artifact@v4
         with:
@@ -69,7 +69,7 @@ jobs:
           nohup mlflow ui --host 0.0.0.0 --port 5000 &  # Run MLflow UI in the background
           sleep 5  # Wait for a moment to let the server starts
       - name: Model Building
-        run: tourism_project_Anubha/model_building/train.py
+        run: chmod +x tourism_project_Anubha/model_building/train.py
       - name: Commit Trained Model
         run: |
           git config user.name "github-actions[bot]"
