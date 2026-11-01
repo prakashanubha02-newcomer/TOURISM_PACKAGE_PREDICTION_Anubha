@@ -1,6 +1,6 @@
 import pandas as pd
 
-RAW_PATH = "/content/tourism_project_Anubha/data/tourism.csv"
+RAW_PATH = "tourism_project_Anubha/data/tourism.csv"
 
 # Load the raw dataset
 df = pd.read_csv(RAW_PATH)
