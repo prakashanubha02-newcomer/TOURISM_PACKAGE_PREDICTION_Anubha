@@ -45,10 +45,10 @@ jobs:
         with:
           name: data-splits
           path: |
-            Xtrain.csv
-            Xtest.csv
-            ytrain.csv
-            ytest.csv
+            tourism_project_Anubha/data/Xtrain.csv
+            tourism_project_Anubha/data/Xtest.csv
+            tourism_project_Anubha/data/ytrain.csv
+            tourism_project_Anubha/data/ytest.csv
 
   model-traning:
     needs: data-prep
