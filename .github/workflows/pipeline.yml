@@ -21,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run:  pip install -r tourism_project_Anubha/requirements.txt
       - name: Register Dataset
-        run: tourism_project_Anubha/model_building/data_register.py
+        run:  chmod +x tourism_project_Anubha/model_building/data_register.py
       - name: Upload Registered Dataset
         uses: actions/upload-artifact@v4
         with:
